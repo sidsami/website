@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <div style="height: 30px; background-color: black">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> about us</a>
+</div>
+</div>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="C:\Users\siddharth\Downloads\deals.jpg"
+  style="width:50%">
+  <img class="mySlides" src="C:\Users\siddharth\Downloads\40 percent.jpg"
+  style="width:50%">
+</section>
+
+<!-- Band Description -->
+<section class="container center content" style="max-width:600px">
+  <h2 class="wide">Techopedia</h2>
+  <p style="color:blue;">WE ARE TECH ANTHUSIAST</p>
+  <p class="justify">Hi welcome to techopedia website. here you can get new tech related updates, new offers on the smartphones
+    and we are here to assist you with your smartphone relate issues.</p>
+</section>
+
+<!-- Band Members -->
+<section class="row-padding center light-grey">
+  <article class="third">
+    <p>BOAT BUDS</p>
+    <img src="C:\Users\siddharth\Downloads\boat buds.jpg" alt="today's deals" style="width:20%">
+    <p>today's deals</p>
+  </article>
+  <article class="third">
+    <p>Samsung S23</p>
+    <img src="C:\Users\siddharth\Downloads\samsung s23.webp" alt="today's offer" style="width:20%">
+    <p>the 8 pm deals.</p>
+  </article>
+  <article class="third">
+    <p>40% OFF ON SPEAKERS</p>
+    <img src="C:\Users\siddharth\Downloads\jbl speaker.jpg" alt="exclusivly yours" style="width:20%">
+    <p>EMI offers.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="container padding-64 center black xlarge">
+  <div style="height: 50px; background-color: black">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="medium">
+    </div>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+</script>
+
+</body>
+</html>
